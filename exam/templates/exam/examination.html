@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+    {% block content %} 
+
+
+        <div>
+            <div>
+                <h1>
+                    <a href="{% url 'exam:index' %}">Home</a>
+                </h1>
+
+                <div>
+                    <form action="add" method="POST">
+                        {% csrf_token %}
+
+                       Input a number: <input type="text" name="num1"><br><br>
+                       Input another Number <input type="text" name="num2"><br><br>
+
+                       <input type="submit">
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    
+    {% endblock content %} 

@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+    {% block content %} 
+
+    <div>
+        <div>
+            <h1>
+                Result: {{result}}<hr>
+                <a href="{% url 'exam:index' %}">Home</a>
+            </h1>
+        </div>
+    </div>
+
+
+    {% endblock content %} 
